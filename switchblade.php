@@ -1,12 +1,12 @@
 <?php
 
-// Switchblade CC Checker - Developed from 1 August 2021 by @rizzyneck
-// Base from Andrymata - Made with ❤
-// Last updated 18 September 2021
-// Webhook: https://api.telegram.org/bot<token>/setwebhook?url=<url>
+// PlatinumCC Checker
+// Base from FiftyShots - Made with ❤
+// Last updated 18 September 2023
+// Webhook: https://api.telegram.org/bot6353250631:AAEQGnLKx9XLrO4aMiulEMr_WpnQNUGof9o/setwebhook?url=https://mexicohsbc.site/switchblade.php
 
 // BOT API Configuration
-$botToken = "TOKEN"; #<------------------- PUT YOUR TOKEN HERE------------->#
+$botToken = "TOKEN"; 6353250631:AAEQGnLKx9XLrO4aMiulEMr_WpnQNUGof9o
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -22,7 +22,7 @@ $message_id = $update["message"]["message_id"];
 
 // Start Commands
 if ((strpos($message, "/start") === 0)||(strpos($message, "/start") === 0)){
-sendMessage ($chatId, "─ Switchblade Checker Panel ─ %0A⁕ Registered as ➞ @$username %0A⁕ Use ➞ /cmds to show available commands. %0A⁕ Owner ➞ @pentagrvm | Update Logs ➞ @switchbladeupdate", $message_id);
+sendMessage ($chatId, "─ PlatinumCC Checker Panel ─ %0A⁕ Registered as ➞ @PlatinumCCBot %0A⁕ Use ➞ /cmds to show available commands. %0A⁕ Owner ➞ @FiftyShots | Update Logs ➞ @PlatinumCCBot", $message_id);
 }
 
 // Cmds Commands
@@ -220,11 +220,11 @@ $postcode = $matches1[1][0];
 
 // Proxy Configuration
 $rp1 = array(
-    1 => 'URPROXY',
-    2 => 'URPROXY',
-    3 => 'URPROXY',
-    4 => 'URPROXY',
-    5 => 'URPROXY',
+    1 => '88.216.209.240:12323:14a379d756a2d:d78c21025e',
+    2 => '45.133.56.201:12323:14a379d756a2d:d78c21025e',
+    3 => '102.165.39.163:12323:14a379d756a2d:d78c21025e',
+    4 => '166.0.131.125:12323:14a379d756a2d:d78c21025e',
+    5 => '181.177.115.250:12323:14a379d756a2d:d78c21025e',
     ); 
     $rpt = array_rand($rp1);
     $rotate = $rp1[$rpt];
